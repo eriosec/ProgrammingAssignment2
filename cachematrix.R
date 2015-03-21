@@ -52,12 +52,6 @@ makeCacheMatrix <- function(x = matrix()) {
     
     invmatrix <- matrix(numeric(0),0,0)
     
-    enclosingenv<-environment(makeCacheMatrix)
-    
-    runenv<-environment()
-    
-    callenv<-parent.frame()
-    
     set <- function(ymatrix) {
         x <<- ymatrix
         invmatrix <<- matrix(numeric(0),0,0)
@@ -71,10 +65,7 @@ makeCacheMatrix <- function(x = matrix()) {
     
     getinverse <- function() invmatrix
     
-    list(enclosingenv=enclosingenv,
-         runenv=runenv,
-         callenv=callenv,
-         set = set, get = get,
+    list(set = set, get = get,
          setinverse = setinverse,
          getinverse = getinverse)
 
