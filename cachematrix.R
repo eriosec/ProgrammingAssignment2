@@ -2,7 +2,7 @@
 ## Overall functions Descriptions:
 
 ## A.  "makeCacheMatrix" is a function that takes an argument of type matrix
-##      named x, and does the following:
+##      which we name x, and does the following:
 ## 1. It INITIALIZES a matrix of length 0 and assigns it to a matrix variable
 ##    named invmatrix into which the inverse of x will be stored
 ## 2. It then defines a function named "set" into which the matrix argument of
@@ -44,7 +44,7 @@
 
 ## Short Descrition of "makeCacheMatrix":
 
-## When bound to a name, "makeCacheMatrix" caches the matrix that gets passed as 
+## When bound to a name variable, "makeCacheMatrix" caches the matrix that gets passed as 
 ## argument and intitializes its inverse to  a 0x0 matrix and makes both
 ## available through the lists of functions that are returned.
 
